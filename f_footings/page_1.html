@@ -417,6 +417,16 @@
 	<button class="menu-button"><span>Menu</span></button>
 	<script src="js/classie.js"></script>
 	<script src="js/main1.js"></script>
+	<script>
+		function requestDesktopSite(){
+		  if(document.getElementsByTagName('meta')['viewport'].content=='width= 1440px;'){
+		   document.getElementsByTagName('meta')['viewport'].content='width= 400px;';
+		  }else{
+		   document.getElementsByTagName('meta')['viewport'].content='width= 1440px;';
+		  }
+		 }
+		 requestDesktopSite();
+	  </script>
 	<!--Every subtopic is having equal number of subsubtopic therefore extra subsubtopics must be given a blank name and link-->
     <script>
 		function func(link) {
