@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+   <body style="background-color: black;">
+      <script>
+         setTimeout(function(){
+            window.location.href = 'index.html';
+         }, 5500);
+      </script>
+      <style>
+        #myVideo {
+            background-color: black;
+            width:90%;
+            height:auto;
+          }
+          @media only screen and (max-width: 600px){
+            #myVideo {
+                margin-top: 50%;
+                background-color: black;
+                width:100%;
+                height:auto;
+              }
+          }
+      </style>
+      <video autoplay muted id="myVideo">
+        <source src="images/cp1.mp4" type="video/mp4">
+      </video>
+<audio autoplay>
+<source src="images/cp1.mp3" type="audio/mp3">
+</audio>
+   </body>
+</html>
